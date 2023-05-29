@@ -28,7 +28,7 @@ def extract_text(url):
 
 
 if __name__ == "__main__":
-    df = pd.read_excel(R'C:\Users\deves\Desktop\20211030 Test Assignment-20230525T065739Z-001\20211030 Test Assignment\input.xlsx')
+    df = pd.read_excel(R'C:\Users\Desktop\input.xlsx')
 # Iterate over the rows in the DataFrame
     for row in df.iterrows():
     # Get the URL and ID of the article
