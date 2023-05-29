@@ -4,10 +4,10 @@
 # In[1]:
 
 
-with open(r"C:\Users\deves\Desktop\BlackCoffer_assignment\MasterDictionary\positive-words.txt", 'r') as f:
+with open(r"C:\Users\Desktop\BlackCoffer_assignment\MasterDictionary\positive-words.txt", 'r') as f:
     text = f.read()
 positive_words = text.split()
-with open(r"C:\Users\deves\Desktop\BlackCoffer_assignment\MasterDictionary\negative-words.txt", 'r') as t:
+with open(r"C:\Users\Desktop\BlackCoffer_assignment\MasterDictionary\negative-words.txt", 'r') as t:
     text = t.read()
 negative_words = text.split()
 
@@ -17,7 +17,7 @@ negative_words = text.split()
 
 import glob
 stop_words = []
-for filename in glob.glob(r"C:\Users\deves\Desktop\BlackCoffer_assignment\StopWords\*.txt"):
+for filename in glob.glob(r"C:\Users\Desktop\BlackCoffer_assignment\StopWords\*.txt"):
     with open(filename, 'r') as f:
         sw = f.read()
         stop_words.append(sw.split())
@@ -107,7 +107,7 @@ import nltk
 import re
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
-for filename in glob.glob(r"C:\Users\deves\Desktop\BlackCoffer_assignment\scrape_data\*.txt"):
+for filename in glob.glob(r"C:\Users\Desktop\BlackCoffer_assignment\scrape_data\*.txt"):
     with open(filename, 'r',encoding="utf-8") as f:
         data = f.read()
         URL_ID = re.findall("\d+", filename)[0]
@@ -188,7 +188,7 @@ df['URL_ID'] = df['URL_ID'].astype('int64')
 # In[11]:
 
 
-df_input = pd.read_excel(r"C:\Users\deves\Desktop\BlackCoffer_assignment\Input.xlsx")
+df_input = pd.read_excel(r"C:\Users\Desktop\BlackCoffer_assignment\Input.xlsx")
 
 
 # In[12]:
